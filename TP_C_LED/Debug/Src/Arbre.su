@@ -1,1 +1,5 @@
-../Src/Arbre.c:4:6:CreerFeuille	32	static
+../Src/Arbre.c:5:6:CreerFeuille	32	static
+../Src/Arbre.c:17:6:afficherTabArbreHuffman	24	static
+../Src/Arbre.c:36:6:triArbre	32	static
+../Src/Arbre.c:49:6:FaireArbre	32	static
+../Src/Arbre.c:73:6:parcourirArbre	16	static

@@ -9,3 +9,13 @@ struct noeud *gauche, *droite;// Lien vers les nœuds suivants
 };
 
 void CreerFeuille(struct noeud * arbre[256], uint32_t tab[256]);
+
+void afficherTabArbreHuffman(struct noeud* arbre[256], uint32_t taille);
+
+void triArbre(struct noeud* arbre[256], uint32_t taille);
+
+void FaireArbre(struct noeud* arbre[256], uint32_t taille);
+
+void parcourirArbre(struct noeud* ptrNoeud);
+
+

@@ -1,1 +1,5 @@
-../Src/Arbre.c:4:6:CreerFeuille	3
+../Src/Arbre.c:5:6:CreerFeuille	3
+../Src/Arbre.c:17:6:afficherTabArbreHuffman	3
+../Src/Arbre.c:36:6:triArbre	4
+../Src/Arbre.c:49:6:FaireArbre	4
+../Src/Arbre.c:73:6:parcourirArbre	3

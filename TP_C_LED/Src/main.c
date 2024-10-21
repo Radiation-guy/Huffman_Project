@@ -52,8 +52,10 @@ int main(void)
 	SYSTICK_Init();
 	occurance(texte, tabCaractere);
 	CreerFeuille(arbreHuffman, tabCaractere);
+	triArbre(arbreHuffman, 4);
+	FaireArbre(arbreHuffman, 4);
 	while(1){
-	printf("occurance de a = %ld, b= %ld, c=%ld, d=%ld \r\n", arbreHuffman[0]->occurence, arbreHuffman[1]->occurence, arbreHuffman[2]->occurence, arbreHuffman[3]->occurence);
+	parcourirArbre(arbreHuffman[0]);
 	}
 }
 
