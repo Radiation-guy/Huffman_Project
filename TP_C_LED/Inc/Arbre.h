@@ -18,4 +18,8 @@ void FaireArbre(struct noeud* arbre[256], uint32_t taille);
 
 void parcourirArbre(struct noeud* ptrNoeud);
 
+void triArbreHelene (struct noeud * arbre[256], uint32_t taille);
 
+void FaireNoeud(struct noeud* arbre[256], uint32_t taille);
+
+void creerCode(struct noeud* ptrNoeud,uint32_t code,uint32_t taille);

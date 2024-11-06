@@ -16,7 +16,7 @@ S_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Startup/%.o: ../Startup/%.s Startup/subdir.mk
-	arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"D:/Users/user/Documents/STM32CubeIDE/workspace_1.16.1/TP_C_LED/Drivers/CMSIS/Device" -I"D:/Users/user/Documents/STM32CubeIDE/workspace_1.16.1/TP_C_LED/Drivers/CMSIS/Include" -I"D:/Users/user/Documents/STM32CubeIDE/workspace_1.16.1/TP_C_LED/Src" -I"D:/Users/user/Documents/STM32CubeIDE/workspace_1.16.1/TP_C_LED/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Users/user/Documents/STM32CubeIDE/workspace_1.16.1/TP_C_LED/Inc" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"D:/Users/user/Desktop/tpC/TP comptage huffman/TP_C_LED/Drivers/CMSIS/Device" -I"D:/Users/user/Desktop/tpC/TP comptage huffman/TP_C_LED/Drivers/CMSIS/Include" -I"D:/Users/user/Desktop/tpC/TP comptage huffman/TP_C_LED/Src" -I"D:/Users/user/Desktop/tpC/TP comptage huffman/TP_C_LED/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Users/user/Desktop/tpC/TP comptage huffman/TP_C_LED/Inc" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
 
 clean: clean-Startup
 

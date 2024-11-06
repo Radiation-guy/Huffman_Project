@@ -59,8 +59,8 @@ all: main-build
 main-build: TP_C_LED.elf secondary-outputs
 
 # Tool invocations
-TP_C_LED.elf TP_C_LED.map: $(OBJS) $(USER_OBJS) D:\Users\user\Documents\STM32CubeIDE\workspace_1.16.1\TP_C_LED\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TP_C_LED.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Users\user\Documents\STM32CubeIDE\workspace_1.16.1\TP_C_LED\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TP_C_LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TP_C_LED.elf TP_C_LED.map: $(OBJS) $(USER_OBJS) D:\Users\user\Desktop\tpC\TP\ comptage\ huffman\TP_C_LED\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TP_C_LED.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Users\user\Desktop\tpC\TP comptage huffman\TP_C_LED\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TP_C_LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

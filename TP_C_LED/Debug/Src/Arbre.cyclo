@@ -1,5 +1,7 @@
 ../Src/Arbre.c:5:6:CreerFeuille	3
 ../Src/Arbre.c:17:6:afficherTabArbreHuffman	3
 ../Src/Arbre.c:36:6:triArbre	4
-../Src/Arbre.c:49:6:FaireArbre	4
-../Src/Arbre.c:73:6:parcourirArbre	3
+../Src/Arbre.c:52:6:triArbreHelene	5
+../Src/Arbre.c:85:6:FaireNoeud	2
+../Src/Arbre.c:100:6:parcourirArbre	3
+../Src/Arbre.c:113:6:creerCode	3

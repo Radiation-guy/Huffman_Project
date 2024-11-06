@@ -52,12 +52,18 @@ int main(void)
 	SYSTICK_Init();
 	occurance(texte, tabCaractere);
 	CreerFeuille(arbreHuffman, tabCaractere);
-	triArbre(arbreHuffman, 4);
-	FaireArbre(arbreHuffman, 4);
-	while(1){
-	parcourirArbre(arbreHuffman[0]);
-	}
-}
+	uint8_t taillearbre = 4;
 
+	while(taillearbre !=1)
+	{
+		triArbre(arbreHuffman, taillearbre);
+		FaireNoeud(arbreHuffman, taillearbre);
+		//triArbreHelene(arbreHuffman, taillearbre);
+		taillearbre--;
+	}
+	parcourirArbre(arbreHuffman[0]);
+	creerCode(arbreHuffman[0], 0,1);
+	parcourirArbre(arbreHuffman[0]);
+}
 
 
